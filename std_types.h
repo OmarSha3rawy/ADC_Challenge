@@ -42,6 +42,7 @@ typedef double                float64;
 
 typedef void (*void_func_ptr)(void);
 typedef void (*uint8_func_ptr)(uint8);
+typedef void (*uint16_func_ptr)(uint16);
 
 
 #ifndef NULL
