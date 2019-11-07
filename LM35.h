@@ -9,7 +9,7 @@
 #ifndef LM35_H_
 #define LM35_H_
 
-//#include "ADC.h"
+#include "adc.h"
 
 #include "std_types.h"
 

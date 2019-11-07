@@ -7,21 +7,15 @@
 
 #include "LM35.h"
 
-static float ADC_read(uint8 channel);
 
-#define SENSOR_CHANNEL 16
+
+#define SENSOR_CHANNEL 0
 #define Vref 2.56f
 #define LM35_STEP 10.0f
 #define ADC_STEP 2.5 //(Vref * 1000.0f / 1024.0f)
 
 
 float LM35_read_celsius(void)
-{
+{ 
 	return ADC_read(SENSOR_CHANNEL) * (ADC_STEP/LM35_STEP);
 }
-
-static float ADC_read(uint8 channel)
-{
-	return channel;
-}
-

@@ -10,14 +10,19 @@
 #include "lcd.h"
 
 int main(void)
+
 {
+	LCD_init();
+	ADC_init();
 	uint8 temp = 0;
+	LCD_displayString("Temp = ");
     /* Replace with your application code */
     while (1) 
     {
-		LCD_clearScreen();
-		temp = (uint8)LM35_read_celsius();
-		LCD_displayString("Temp = ");
+		//LCD_clearScreen();
+		temp = (uint8)LM35_read_celsius() - 1; // the float to int conversion adaption
+
+		LCD_goToRowColumn(0, 7);
 		LCD_intgerToString(temp);
     }
 }
