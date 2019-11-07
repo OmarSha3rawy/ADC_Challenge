@@ -1,8 +1,7 @@
 /*
  * adc.c
  *
- *  Created on: Sep 5, 2015
- *  Author: Mohamed Tarek
+ *  Author: Zizio
  */
 
 #include "adc.h"

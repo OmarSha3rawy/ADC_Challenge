@@ -1,8 +1,8 @@
 /*
  * adc.h
  *
- *  Created on: Sep 5, 2015
- *  Author: Mohamed Tarek
+
+ *  Author: Zizo
  */
 
 #ifndef ADC_H_
